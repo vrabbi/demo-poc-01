@@ -1,0 +1,26 @@
+id: 4dcbd301-bfbe-4fa3-aab7-af26536d0e2d
+timestamp: 2023-11-19T10:55:14.967Z
+source: TAP-GUI
+username: vrabbi
+accelerator:
+  name: tanzu-java-web-app
+fragments:
+  - name: build-wrapper-gradle
+  - name: build-wrapper-maven
+  - name: devcontainer
+  - name: java-version
+  - name: tap-workload
+options:
+  lifecycle: experimental
+  bsGitBranch: main
+  repoVisibility: public
+  projectName: demo-poc-01
+  buildTool: maven
+  springBootVersion: 2.7
+  nativeBuild: false
+  javaVersion: 11
+  includeBuildToolWrapper: true
+  includeDevContainer: false
+  bsGitRepository: github.com?owner=vrabbi&repo=demo-poc-01
+  owner: platform-team
+  system: demo-apps

@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo-poc-01
+  annotations:
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=demo-poc-01
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: vrabbi/demo-poc-01
+    grafana/dashboard-selector: demo-poc-01
+    janus-idp.io/tekton: demo-poc-01
+spec:
+  type: service
+  system: demo-apps
+  lifecycle: experimental
+  owner: platform-team
